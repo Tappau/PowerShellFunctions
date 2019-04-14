@@ -96,7 +96,7 @@ function Invoke-Sql {
                 Write-Verbose "Executing SQL Command..."
                 Write-Verbose $cmd.CommandText
                 $result = $cmd.ExecuteNonQuery()
-                if ($result -gt 0) {
+                if ($result -ge -1) {
                     Write-Verbose "Successfully Executed Command"
                     return $result
                 }

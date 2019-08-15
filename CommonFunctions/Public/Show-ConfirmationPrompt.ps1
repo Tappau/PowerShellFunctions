@@ -4,10 +4,11 @@
 .DESCRIPTION
     Will prompt user for confirmation expecting y/n answer and returning that as a boolean
 .PARAMETER Message
-    The text that should be shown will be appended with (Y/N) ?
+    The text that should be shown will be appended with ' (Y/N) ?'
 .EXAMPLE
     Show-ConfirmationPrompt "Do you wish to continue"
-    Will display as Do you wich to contine (Y/N) ?
+    
+    Will display as 'Do you wish to contine (Y/N) ?'
     returns $true if Y/y otherwise $false
 #>
 function Show-ConfirmationPrompt {
